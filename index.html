@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Developer MMV | Full-Stack Software Engineer &amp; Systems Architect</title>
+  <meta name="description" content="Personal portfolio of Developer MMV. Full-Stack Software Engineer specializing in resilient systems, accessible interfaces, and zero-dependency web craftsmanship.">
+  <meta name="theme-color" content="#2f2e36">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Developer MMV | Full-Stack Software Engineer">
+  <meta property="og:description" content="Crafting elegant, resilient, and performant web systems with modern web standards.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232f2e36'/><text x='50%' y='62%' font-size='46' font-family='sans-serif' font-weight='800' fill='%23e8e8e8' text-anchor='middle'>M</text></svg>">
+
+  <!-- Google Fonts: Inter & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Relative Stylesheet Link -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body id="top">
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       1. NAVBAR / HEADER
+       Landmark: <header role="banner"> and <nav aria-label="Main Navigation">
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <!-- Brand Logo / Identity -->
+      <a href="#hero" class="brand-logo" aria-label="Developer MMV Homepage">
+        <svg class="brand-icon" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="10" fill="currentColor"/>
+          <path d="M11 28V12L17.5 21L24 12V28H20.5V17.5L17.5 22L14.5 17.5V28H11Z" fill="#e8e8e8"/>
+          <circle cx="28" cy="26" r="2.5" fill="#c0c0c0"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">MMV</span>
+          <span class="brand-tag">DEV</span>
+        </span>
+      </a>
+
+      <!-- Primary Navigation Links with Sliding Pill Indicator -->
+      <nav id="primary-nav" class="nav-navigation" aria-label="Primary Navigation">
+        <ul class="nav-list" role="list">
+          <!-- Animated Sliding Pill Indicator for smooth transitions -->
+          <li class="nav-sliding-pill" aria-hidden="true"></li>
+          
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tech-stack" class="nav-link">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#interactive-hub" class="nav-link">Interactive Hub</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities (Theme Toggle & Mobile Menu Button) -->
+      <div class="header-actions">
+        <!-- Light / Dark Mode Toggle -->
+        <button type="button" id="theme-toggle" class="icon-btn theme-toggle-btn" aria-label="Toggle light and dark color theme" aria-pressed="false">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- CTA Header Button (Desktop) -->
+        <a href="#contact" class="btn btn-outline nav-cta-btn">Let's Talk</a>
+
+        <!-- Mobile Navigation Toggle Button -->
+        <button type="button" id="mobile-menu-toggle" class="icon-btn mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false" aria-controls="primary-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       Landmark: <main role="main">
+       ========================================================================= -->
+  <main id="main-content" class="main-content" role="main">
+
+    <!-- =======================================================================
+         2. HERO SECTION
+         Section: Value proposition, headline, bio summary, CTAs, hero image
+         (In Mobile view: Image styled to appear at the very top via CSS order)
+         ======================================================================= -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <div class="hero-container">
+        
+        <!-- Hero Visual / Online Avatar Image
+             (Placed with semantic layout; on mobile view styled at the very top) -->
+        <div class="hero-visual">
+          <div class="avatar-card interactive-tilt" data-tilt="true">
+            <div class="avatar-image-wrapper">
+              <img 
+                src="./assets/avatar.svg" 
+                alt="Minimalist professional portrait of Developer MMV in dark tech attire with code accents"
+                class="avatar-image"
+                width="420"
+                height="460"
+                loading="eager"
+                decoding="async"
+              >
+            </div>
+            <div class="avatar-floating-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>Full-Stack &amp; Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content / Value Proposition & Stat Cards -->
+        <div class="hero-content">
+          <!-- Status pill -->
+          <div class="hero-status-badge" role="status" aria-label="Current working status: Available for new projects">
+            <span class="status-indicator-dot" aria-hidden="true"></span>
+            <span class="status-text">Available for Q4/2026 Projects &amp; Collaborations</span>
+          </div>
+
+          <!-- Main Value Proposition Heading -->
+          <h1 class="hero-title">
+            Architecting <span class="text-highlight">Resilient</span> Systems &amp; Minimalist Interfaces.
+          </h1>
+
+          <!-- Value Proposition Pitch -->
+          <p class="hero-description">
+            Hello, I am <strong>Developer MMV</strong>. A full-stack engineer and digital architect dedicated to writing uncompromising, zero-bloat software. I bridge robust distributed backend engineering with accessible, performance-driven web interfaces.
+          </p>
+
+          <!-- Primary CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" aria-label="View featured engineering projects">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary" aria-label="Navigate to contact section to get in touch">
+              <span>Get in Touch</span>
+            </a>
+            <a href="#interactive-hub" class="btn btn-tertiary" aria-label="Jump to interactive showcase and component demo">
+              <span>Explore Interactive Hub</span>
+            </a>
+          </div>
+
+          <!-- Quick Metrics / Credibility Strip -->
+          <div class="hero-metrics" role="region" aria-label="Key professional metrics">
+            <div class="metric-item">
+              <span class="metric-value">6+</span>
+              <span class="metric-label">Years of Craft</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">40+</span>
+              <span class="metric-label">Shipped Solutions</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">99.9%</span>
+              <span class="metric-label">Reliability SLA</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-value">100/100</span>
+              <span class="metric-label">Lighthouse Focus</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         CAROUSEL OF PILLS / TABS: LANGUAGES, FRAMEWORKS & LOGOS
+         Requirement 2: Interactive carousel of pills holding technologies & logos
+         ======================================================================= -->
+    <section id="tech-stack" class="tech-carousel-section" aria-label="Languages, Frameworks and Technologies Carousel">
+      <div class="section-container">
+        
+        <div class="carousel-header-row">
+          <div class="carousel-title-col">
+            <span class="section-kicker">Core Arsenal</span>
+            <h2 class="carousel-heading">Languages &amp; Frameworks</h2>
+            <p class="carousel-subheading">Select any technology pill below to inspect production use cases and benchmarks.</p>
+          </div>
+          
+          <!-- Filter Tabs for Pills -->
+          <div class="carousel-category-tabs" role="tablist" aria-label="Filter technologies by category">
+            <button type="button" class="carousel-tab-btn active" role="tab" aria-selected="true" data-category="all">All (16)</button>
+            <button type="button" class="carousel-tab-btn" role="tab" aria-selected="false" data-category="languages">Languages</button>
+            <button type="button" class="carousel-tab-btn" role="tab" aria-selected="false" data-category="frameworks">Frameworks &amp; Runtimes</button>
+            <button type="button" class="carousel-tab-btn" role="tab" aria-selected="false" data-category="data-infra">Data &amp; Cloud</button>
+          </div>
+
+          <!-- Carousel Manual Nav Controls -->
+          <div class="carousel-manual-nav" aria-label="Carousel navigation buttons">
+            <button type="button" class="carousel-nav-btn prev" id="carousel-prev-btn" aria-label="Scroll carousel left">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button type="button" class="carousel-nav-btn next" id="carousel-next-btn" aria-label="Scroll carousel right">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- The Continuous Running Ticker / Interactive Carousel Track -->
+        <div class="tech-carousel-wrapper" id="tech-carousel-wrapper">
+          <div class="tech-carousel-track" id="tech-carousel-track" role="region" aria-label="Interactive technology pills carousel">
+            
+            <!-- Pill 1: JavaScript -->
+            <button type="button" class="tech-pill active" data-tech-id="js" data-category="languages" aria-label="JavaScript (ES2024+) - Click to view details">
+              <span class="tech-pill-icon js-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+                  <path d="M7 16.5C7.5 17.5 8.5 18 10 18C11.5 18 12.5 17 12.5 15.5C12.5 13.8 11.2 13.2 9.5 12.5L8.5 12C6.8 11.2 5.5 10.2 5.5 8C5.5 6 7 4.5 9.5 4.5C11.2 4.5 12.5 5.2 13.2 6.8L11 8C10.7 7.2 10.2 6.8 9.5 6.8C8.5 6.8 7.8 7.3 7.8 8.1C7.8 9.2 8.8 9.8 10.2 10.4L11.2 10.8C13.2 11.7 14.8 12.8 14.8 15.5C14.8 18 12.8 20 9.8 20C7.2 20 5.4 18.5 4.8 16.5L7 16.5Z" fill="#000000"/>
+                  <path d="M19.5 4.5V16C19.5 18.8 17.8 20 15 20C13.5 20 12.2 19.4 11.5 18.5L13 16.8C13.5 17.4 14.2 17.8 15 17.8C16.2 17.8 17 17.2 17 15.8V4.5H19.5Z" fill="#000000"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">JavaScript</span>
+              <span class="tech-pill-badge">ES2024+</span>
+            </button>
+
+            <!-- Pill 2: TypeScript -->
+            <button type="button" class="tech-pill" data-tech-id="ts" data-category="languages" aria-label="TypeScript - Click to view details">
+              <span class="tech-pill-icon ts-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#3178C6"/>
+                  <path d="M5 8.5H12V10.5H9.7V19H7.3V10.5H5V8.5Z" fill="#FFFFFF"/>
+                  <path d="M14.5 15.8C15 16.5 15.8 17 16.9 17C18.2 17 18.9 16.3 18.9 15.3C18.9 14 17.9 13.5 16.6 12.9L15.8 12.5C14.5 11.9 13.5 11.1 13.5 9.4C13.5 7.8 14.8 6.5 16.8 6.5C18.2 6.5 19.3 7.1 19.9 8.3L18 9.3C17.7 8.7 17.3 8.3 16.7 8.3C15.9 8.3 15.4 8.7 15.4 9.3C15.4 10.1 16.2 10.5 17.3 11L18.1 11.4C19.7 12.1 21 13 21 15.2C21 17.4 19.3 19 16.8 19C14.7 19 13.3 17.8 12.7 16.3L14.5 15.8Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">TypeScript</span>
+              <span class="tech-pill-badge">Strict Type</span>
+            </button>
+
+            <!-- Pill 3: Python -->
+            <button type="button" class="tech-pill" data-tech-id="python" data-category="languages" aria-label="Python - Click to view details">
+              <span class="tech-pill-icon python-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M11.9 2C8.5 2 6.5 3.5 6.5 5.8V7.5H12.2V8.3H4.4C2.1 8.3 0.2 10.2 0.2 12.5C0.2 14.8 1.6 16.4 3.9 16.4H5.6V14C5.6 12 7.3 10.3 9.3 10.3H15.1C16.8 10.3 18.2 8.9 18.2 7.2V5.5C18.2 3.2 16.2 2 11.9 2ZM9.3 3.8C9.9 3.8 10.4 4.3 10.4 4.9C10.4 5.5 9.9 6 9.3 6C8.7 6 8.2 5.5 8.2 4.9C8.2 4.3 8.7 3.8 9.3 3.8Z" fill="#3776AB"/>
+                  <path d="M12.1 22C15.5 22 17.5 20.5 17.5 18.2V16.5H11.8V15.7H19.6C21.9 15.7 23.8 13.8 23.8 11.5C23.8 9.2 22.4 7.6 20.1 7.6H18.4V10C18.4 12 16.7 13.7 14.7 13.7H8.9C7.2 13.7 5.8 15.1 5.8 16.8V18.5C5.8 20.8 7.8 22 12.1 22ZM14.7 20.2C14.1 20.2 13.6 19.7 13.6 19.1C13.6 18.5 14.1 18 14.7 18C15.3 18 15.8 18.5 15.8 19.1C15.8 19.7 15.3 20.2 14.7 20.2Z" fill="#FFD43B"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Python</span>
+              <span class="tech-pill-badge">AsyncIO</span>
+            </button>
+
+            <!-- Pill 4: Go (Golang) -->
+            <button type="button" class="tech-pill" data-tech-id="go" data-category="languages" aria-label="Go (Golang) - Click to view details">
+              <span class="tech-pill-icon go-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#00ADD8"/>
+                  <path d="M4 12C4 8.5 6.5 6 10 6C12.5 6 14.5 7.5 15 9.5H12.5C12 8.5 11 8 10 8C7.8 8 6.5 9.8 6.5 12C6.5 14.2 7.8 16 10 16C11.2 16 12.2 15.2 12.6 14H10V12H15V15C14 17 12 18 10 18C6.5 18 4 15.5 4 12Z" fill="#FFFFFF"/>
+                  <path d="M19 10C17.3 10 16 11.3 16 13C16 14.7 17.3 16 19 16C20.7 16 22 14.7 22 13C22 11.3 20.7 10 19 10ZM19 14.2C18.3 14.2 17.8 13.7 17.8 13C17.8 12.3 18.3 11.8 19 11.8C19.7 11.8 20.2 12.3 20.2 13C20.2 13.7 19.7 14.2 19 14.2Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Golang</span>
+              <span class="tech-pill-badge">Concurrency</span>
+            </button>
+
+            <!-- Pill 5: Rust -->
+            <button type="button" class="tech-pill" data-tech-id="rust" data-category="languages" aria-label="Rust - Click to view details">
+              <span class="tech-pill-icon rust-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="#DEA584" stroke-width="2"/>
+                  <path d="M8 8H13C14.5 8 15.5 9 15.5 10.5C15.5 11.8 14.5 12.5 13.5 12.8L16 16H13.5L11.5 13H10V16H8V8ZM10 11.5H12.5C13 11.5 13.5 11.2 13.5 10.5C13.5 9.8 13 9.5 12.5 9.5H10V11.5Z" fill="#DEA584"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Rust</span>
+              <span class="tech-pill-badge">Systems</span>
+            </button>
+
+            <!-- Pill 6: Node.js -->
+            <button type="button" class="tech-pill" data-tech-id="node" data-category="frameworks" aria-label="Node.js - Click to view details">
+              <span class="tech-pill-icon node-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L21 7.2V16.8L12 22L3 16.8V7.2L12 2Z" fill="#339933"/>
+                  <path d="M12 6.5L17.5 9.7V14.3L12 17.5L6.5 14.3V9.7L12 6.5Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Node.js</span>
+              <span class="tech-pill-badge">Runtime</span>
+            </button>
+
+            <!-- Pill 7: HTML5 & Semantics -->
+            <button type="button" class="tech-pill" data-tech-id="html5" data-category="frameworks" aria-label="HTML5 - Click to view details">
+              <span class="tech-pill-icon html-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 2L4.8 20L12 22L19.2 20L21 2H3Z" fill="#E34F26"/>
+                  <path d="M12 3.8V20.2L17.6 18.6L19.1 3.8H12Z" fill="#EF652A"/>
+                  <path d="M6.7 6.5H17.3L17 9.5H10.1L10.3 12H16.7L16.2 17.2L12 18.4L7.8 17.2L7.5 13.5H9.5L9.7 15.6L12 16.2L14.3 15.6L14.5 13.8H6.5L6.7 6.5Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">HTML5</span>
+              <span class="tech-pill-badge">ARIA / WCAG</span>
+            </button>
+
+            <!-- Pill 8: CSS3 & Modern Layout -->
+            <button type="button" class="tech-pill" data-tech-id="css3" data-category="frameworks" aria-label="CSS3 - Click to view details">
+              <span class="tech-pill-icon css-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 2L4.8 20L12 22L19.2 20L21 2H3Z" fill="#1572B6"/>
+                  <path d="M12 3.8V20.2L17.6 18.6L19.1 3.8H12Z" fill="#33A9DC"/>
+                  <path d="M7 6.5H17.3L16.8 11.5H10L10.3 14H16.5L16.2 17.2L12 18.4L7.8 17.2L7.5 13.5H9.5L9.7 15.6L12 16.2L14.3 15.6L14.5 13.5H7.2L7 6.5Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">CSS3</span>
+              <span class="tech-pill-badge">Grid &amp; Flex</span>
+            </button>
+
+            <!-- Pill 9: React & Web Components -->
+            <button type="button" class="tech-pill" data-tech-id="react" data-category="frameworks" aria-label="React & Web Components - Click to view details">
+              <span class="tech-pill-icon react-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="2.2" fill="#61DAFB"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.2" transform="rotate(30 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.2" transform="rotate(90 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="3.8" stroke="#61DAFB" stroke-width="1.2" transform="rotate(150 12 12)"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">React</span>
+              <span class="tech-pill-badge">Components</span>
+            </button>
+
+            <!-- Pill 10: PostgreSQL -->
+            <button type="button" class="tech-pill" data-tech-id="postgres" data-category="data-infra" aria-label="PostgreSQL - Click to view details">
+              <span class="tech-pill-icon postgres-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="4" fill="#336791"/>
+                  <path d="M12 4C8 4 6 7 6 11C6 15 8 18 12 18C13 18 14 17.5 14.5 17L14 19H16.5L17.5 14.5C18 12.5 18 10 17 8C16 5.5 14 4 12 4ZM12 6.5C13.5 6.5 14.8 7.5 15.2 9H8.8C9.2 7.5 10.5 6.5 12 6.5Z" fill="#FFFFFF"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">PostgreSQL</span>
+              <span class="tech-pill-badge">ACID SQL</span>
+            </button>
+
+            <!-- Pill 11: Redis -->
+            <button type="button" class="tech-pill" data-tech-id="redis" data-category="data-infra" aria-label="Redis - Click to view details">
+              <span class="tech-pill-icon redis-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <polygon points="12,2 22,7 12,12 2,7" fill="#DC382D"/>
+                  <polygon points="12,12 22,7 22,17 12,22" fill="#B3241C"/>
+                  <polygon points="12,12 2,7 2,17 12,22" fill="#DC382D"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Redis</span>
+              <span class="tech-pill-badge">Sub-millisecond</span>
+            </button>
+
+            <!-- Pill 12: Docker -->
+            <button type="button" class="tech-pill" data-tech-id="docker" data-category="data-infra" aria-label="Docker - Click to view details">
+              <span class="tech-pill-icon docker-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="10" width="3" height="3" fill="#2496ED"/>
+                  <rect x="6" y="10" width="3" height="3" fill="#2496ED"/>
+                  <rect x="10" y="10" width="3" height="3" fill="#2496ED"/>
+                  <rect x="6" y="6" width="3" height="3" fill="#2496ED"/>
+                  <rect x="10" y="6" width="3" height="3" fill="#2496ED"/>
+                  <rect x="14" y="10" width="3" height="3" fill="#2496ED"/>
+                  <path d="M22 13C21.5 12.5 20.2 12 18.5 12.5C18 12.2 17.5 12 17 12H1C1 16 4 19 9 19C15 19 19.5 16 21 13.5C21.8 13.6 22.2 13.2 22 13Z" fill="#2496ED"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Docker</span>
+              <span class="tech-pill-badge">Containers</span>
+            </button>
+
+            <!-- Pill 13: GraphQL -->
+            <button type="button" class="tech-pill" data-tech-id="graphql" data-category="frameworks" aria-label="GraphQL - Click to view details">
+              <span class="tech-pill-icon graphql-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <polygon points="12,2 21.5,7.5 21.5,18.5 12,24 2.5,18.5 2.5,7.5" stroke="#E10098" stroke-width="1.8"/>
+                  <polygon points="12,5 19,9 19,17 12,21 5,17 5,9" stroke="#E10098" stroke-width="1.2"/>
+                  <circle cx="12" cy="2" r="2" fill="#E10098"/>
+                  <circle cx="21.5" cy="7.5" r="2" fill="#E10098"/>
+                  <circle cx="21.5" cy="18.5" r="2" fill="#E10098"/>
+                  <circle cx="12" cy="24" r="2" fill="#E10098"/>
+                  <circle cx="2.5" cy="18.5" r="2" fill="#E10098"/>
+                  <circle cx="2.5" cy="7.5" r="2" fill="#E10098"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">GraphQL</span>
+              <span class="tech-pill-badge">Federated</span>
+            </button>
+
+            <!-- Pill 14: Git & CI/CD -->
+            <button type="button" class="tech-pill" data-tech-id="git" data-category="data-infra" aria-label="Git & CI/CD - Click to view details">
+              <span class="tech-pill-icon git-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M21.7 10.7L13.3 2.3C12.9 1.9 12.3 1.9 11.9 2.3L9.5 4.7L12 7.2C12.7 7 13.5 7.2 14.1 7.8C14.7 8.4 14.9 9.3 14.7 10L17.1 12.4C17.8 12.2 18.7 12.4 19.3 13C20.1 13.8 20.1 15.1 19.3 15.9C18.5 16.7 17.2 16.7 16.4 15.9C15.8 15.3 15.6 14.4 15.8 13.7L13.6 11.5V16.2C13.9 16.5 14.1 16.9 14.1 17.4C14.1 18.5 13.2 19.4 12.1 19.4C11 19.4 10.1 18.5 10.1 17.4C10.1 16.7 10.4 16.2 10.9 15.9V11.1C10.4 10.8 10.1 10.3 10.1 9.6C10.1 8.9 10.4 8.4 10.8 8.1L8.3 5.6L2.3 11.6C1.9 12 1.9 12.6 2.3 13L10.7 21.4C11.1 21.8 11.7 21.8 12.1 21.4L21.7 11.8C22.1 11.5 22.1 11.1 21.7 10.7Z" fill="#F05032"/>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Git Actions</span>
+              <span class="tech-pill-badge">Pipelines</span>
+            </button>
+
+            <!-- Pill 15: Linux Systems -->
+            <button type="button" class="tech-pill" data-tech-id="linux" data-category="data-infra" aria-label="Linux Systems - Click to view details">
+              <span class="tech-pill-icon linux-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </span>
+              <span class="tech-pill-name">Linux Kernel</span>
+              <span class="tech-pill-badge">POSIX / Bash</span>
+            </button>
+
+            <!-- Pill 16: WebSockets & WebCrypto -->
+            <button type="button" class="tech-pill" data-tech-id="websockets" data-category="frameworks" aria-label="WebSockets & Real-Time - Click to view details">
+              <span class="tech-pill-icon ws-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </span>
+              <span class="tech-pill-name">WebSockets</span>
+              <span class="tech-pill-badge">Real-Time</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Dynamic Tech Spotlight Panel (Updates when clicking any pill) -->
+        <div class="tech-spotlight-card" id="tech-spotlight-card" role="region" aria-live="polite" aria-atomic="true">
+          <div class="spotlight-badge-row">
+            <span class="spotlight-kicker" id="spotlight-category">Languages / Primary Core</span>
+            <span class="spotlight-status">Production Verified</span>
+          </div>
+          <div class="spotlight-main">
+            <div class="spotlight-title-row">
+              <h3 class="spotlight-title" id="spotlight-title">JavaScript (ES2024+)</h3>
+              <span class="spotlight-exp-pill" id="spotlight-exp">6+ Years In Production</span>
+            </div>
+            <p class="spotlight-desc" id="spotlight-desc">
+              Mastery of modern ECMAScript standards, asynchronous pipelines, event loops, Web Workers, and direct DOM manipulation with zero runtime framework dependencies.
+            </p>
+            <div class="spotlight-meta-row">
+              <div class="spotlight-stat">
+                <span class="stat-meta-label">Primary Use Case:</span>
+                <span class="stat-meta-val" id="spotlight-usecase">High-performance zero-bloat web clients, real-time telemetry processing</span>
+              </div>
+              <div class="spotlight-stat">
+                <span class="stat-meta-label">Associated Project:</span>
+                <a href="#projects" class="stat-meta-link" id="spotlight-project-link">ApexMetrics Cloud Analytics &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. CORE CONTENT SECTION: ABOUT ME
+         Landmark Section: Detailed narrative, engineering philosophy, timeline
+         ======================================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-kicker">01 / Background</span>
+          <h2 id="about-heading" class="section-title">About Developer MMV</h2>
+          <p class="section-lead">A steadfast focus on clarity, performance, and long-term maintainability.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="about-narrative">
+            <h3 class="about-subheading">Engineering with Intention</h3>
+            <p>
+              I build web applications and digital infrastructure with a core belief: <em>software should be fast, accessible, and respect the hardware it runs upon</em>. In an ecosystem often dominated by layer upon layer of bloated dependencies, I champion clean vanilla technologies, elegant architectural patterns, and strict accessibility standards.
+            </p>
+            <p>
+              Over the past six years, I have engineered distributed cloud backends, microservices, high-volume transactional APIs, and client-facing interfaces that load instantly across low-bandwidth environments. I thrive at the intersection of technical rigor and minimalist design aesthetics.
+            </p>
+
+            <!-- Core Principles List -->
+            <div class="principles-grid" role="list" aria-label="Core engineering values">
+              <div class="principle-card interactive-tilt" role="listitem">
+                <div class="principle-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <h4>Zero-Bloat Philosophy</h4>
+                <p>Lean execution paths, native web APIs, and minimal bundle overhead.</p>
+              </div>
+
+              <div class="principle-card interactive-tilt" role="listitem">
+                <div class="principle-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h4>Inclusive Accessibility</h4>
+                <p>WCAG 2.1 AAA compliance with screen reader and keyboard-first design.</p>
+              </div>
+
+              <div class="principle-card interactive-tilt" role="listitem">
+                <div class="principle-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <h4>High Availability</h4>
+                <p>Resilient fault tolerance, deterministic states, and observable pipelines.</p>
+              </div>
+
+              <div class="principle-card interactive-tilt" role="listitem">
+                <div class="principle-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4>User-Centric Empathy</h4>
+                <p>Interfaces built to empower humans, streamline tasks, and spark joy.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Career Journey / Highlights Column -->
+          <div class="about-timeline-card interactive-tilt">
+            <h3 class="timeline-title">Career Milestones</h3>
+            <ol class="timeline-list" aria-label="Career experience timeline">
+              <li class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 &mdash; Present</span>
+                  <h4 class="timeline-role">Principal Systems Architect</h4>
+                  <p class="timeline-company">Autonomous Web Systems &amp; Distributed Labs</p>
+                  <p class="timeline-desc">Leading architecture for distributed event streaming systems and modular micro-frontends serving 2M+ monthly active sessions.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2021 &mdash; 2024</span>
+                  <h4 class="timeline-role">Senior Full-Stack Engineer</h4>
+                  <p class="timeline-company">Nexus Cloud Infrastructure</p>
+                  <p class="timeline-desc">Designed high-throughput GraphQL and REST endpoints, optimized client bundles by 64%, and established company-wide accessibility guidelines.</p>
+                </div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2019 &mdash; 2021</span>
+                  <h4 class="timeline-role">Front-End &amp; UI Systems Developer</h4>
+                  <p class="timeline-company">Aura Digital Studio</p>
+                  <p class="timeline-desc">Created responsive, accessible design systems, interactive visualization tools, and zero-framework client portals.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. CORE CONTENT SECTION: TECHNICAL SKILLS GRID
+         ======================================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-kicker">02 / Competencies</span>
+          <h2 id="skills-heading" class="section-title">Technical Expertise</h2>
+          <p class="section-lead">A comprehensive toolkit spanning front-end craftsmanship, cloud infrastructure, and databases.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Skill Category 1: Frontend -->
+          <article class="skills-category-card interactive-tilt" aria-labelledby="frontend-skill-title">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 id="frontend-skill-title">Frontend Engineering</h3>
+            </div>
+            <p class="category-desc">Crafting responsive, standards-based, accessible UIs with smooth interactions.</p>
+            <ul class="skills-tag-list" role="list">
+              <li class="skill-tag">HTML5 (Semantic &amp; ARIA)</li>
+              <li class="skill-tag">Modern CSS3 (Grid &amp; Flexbox)</li>
+              <li class="skill-tag">Vanilla JavaScript (ES2024+)</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">Web Components</li>
+              <li class="skill-tag">Canvas &amp; SVG Graphics</li>
+              <li class="skill-tag">Responsive Design</li>
+              <li class="skill-tag">Performance Profiling</li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 2: Backend -->
+          <article class="skills-category-card interactive-tilt" aria-labelledby="backend-skill-title">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 id="backend-skill-title">Backend &amp; Systems</h3>
+            </div>
+            <p class="category-desc">Building resilient server architectures, concurrent services, and fast APIs.</p>
+            <ul class="skills-tag-list" role="list">
+              <li class="skill-tag">Node.js Runtime</li>
+              <li class="skill-tag">RESTful &amp; GraphQL APIs</li>
+              <li class="skill-tag">WebSockets &amp; Server-Sent Events</li>
+              <li class="skill-tag">Go / Golang</li>
+              <li class="skill-tag">Python &amp; AsyncIO</li>
+              <li class="skill-tag">Authentication (OAuth/JWT)</li>
+              <li class="skill-tag">Microservice Architecture</li>
+              <li class="skill-tag">Fault-Tolerant Pipelines</li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 3: Databases & Storage -->
+          <article class="skills-category-card interactive-tilt" aria-labelledby="database-skill-title">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 id="database-skill-title">Data &amp; Persistence</h3>
+            </div>
+            <p class="category-desc">Modeling reliable schemas, ACID transactions, caching layers, and search.</p>
+            <ul class="skills-tag-list" role="list">
+              <li class="skill-tag">PostgreSQL</li>
+              <li class="skill-tag">Redis &amp; In-Memory Caches</li>
+              <li class="skill-tag">SQLite</li>
+              <li class="skill-tag">MongoDB</li>
+              <li class="skill-tag">Data Modeling &amp; Migration</li>
+              <li class="skill-tag">Query Optimization</li>
+              <li class="skill-tag">Time-Series Logging</li>
+              <li class="skill-tag">Elasticsearch</li>
+            </ul>
+          </article>
+
+          <!-- Skill Category 4: DevOps & Standards -->
+          <article class="skills-category-card interactive-tilt" aria-labelledby="devops-skill-title">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <h3 id="devops-skill-title">DevOps &amp; Quality</h3>
+            </div>
+            <p class="category-desc">Automating deployments, CI/CD observability, and continuous verification.</p>
+            <ul class="skills-tag-list" role="list">
+              <li class="skill-tag">Docker Containers</li>
+              <li class="skill-tag">CI/CD Pipelines (GitHub Actions)</li>
+              <li class="skill-tag">Linux Server Administration</li>
+              <li class="skill-tag">Git Version Control</li>
+              <li class="skill-tag">Automated Testing (TDD/E2E)</li>
+              <li class="skill-tag">Lighthouse CI</li>
+              <li class="skill-tag">Web Security Best Practices</li>
+              <li class="skill-tag">Semantic Versioning</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. CORE CONTENT SECTION: PROJECTS GRID
+         ======================================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-kicker">03 / Portfolio</span>
+          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+          <p class="section-lead">Real-world applications engineered for real users, proven under high workloads.</p>
+        </div>
+
+        <!-- Project Category Filter Controls (Interactive Accessible Tabs) -->
+        <div class="project-filter-toolbar" role="region" aria-label="Filter projects by category">
+          <span class="filter-label" id="filter-heading">Filter by:</span>
+          <div class="filter-buttons-group" role="tablist" aria-labelledby="filter-heading">
+            <button type="button" class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All (6)</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="fullstack">Full-Stack</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="systems">Systems &amp; APIs</button>
+            <button type="button" class="filter-btn" role="tab" aria-selected="false" data-filter="webapps">Web Apps</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid" id="projects-grid" role="region" aria-label="Projects list">
+
+          <!-- Project Card 1 -->
+          <article class="project-card interactive-tilt" data-category="fullstack" aria-labelledby="project-1-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" 
+                alt="Screenshot mockup of ApexMetrics Cloud Analytics Dashboard interface"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="1" aria-haspopup="dialog" aria-label="Preview details for ApexMetrics Cloud Analytics">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Full-Stack</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 id="project-1-title" class="project-title">ApexMetrics Cloud Analytics</h3>
+              <p class="project-summary">
+                A real-time telemetry and metrics analytics dashboard rendering millions of telemetry datapoints with SVG visualizations and WebSocket feeds.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in ApexMetrics">
+                <li>JavaScript ES6+</li>
+                <li>WebSockets</li>
+                <li>Node.js</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for ApexMetrics">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for ApexMetrics on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card interactive-tilt" data-category="systems" aria-labelledby="project-2-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" 
+                alt="Cloud server hardware and network switch indicators symbolizing high uptime infrastructure"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="2" aria-haspopup="dialog" aria-label="Preview details for Strata Distributed Task Orchestrator">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Systems &amp; APIs</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 id="project-2-title" class="project-title">Strata Distributed Orchestrator</h3>
+              <p class="project-summary">
+                A lightweight, zero-dependency background task runner supporting distributed worker nodes, automated job retries, and atomic deduplication.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in Strata">
+                <li>Go</li>
+                <li>Redis</li>
+                <li>Docker</li>
+                <li>REST API</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for Strata">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for Strata on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card interactive-tilt" data-category="webapps" aria-labelledby="project-3-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" 
+                alt="Minimalist workspace showing laptop displaying clean code editor"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="3" aria-haspopup="dialog" aria-label="Preview details for Minimalist Markdown Knowledge Studio">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Web App</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 id="project-3-title" class="project-title">Chronicle Notes &amp; Studio</h3>
+              <p class="project-summary">
+                A local-first, distraction-free markdown knowledge base with bidirectional linking, offline IndexedDB sync, and instant full-text client indexing.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in Chronicle Notes">
+                <li>HTML5</li>
+                <li>CSS Grid</li>
+                <li>IndexedDB</li>
+                <li>Web Workers</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for Chronicle Notes">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for Chronicle Notes on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4 -->
+          <article class="project-card interactive-tilt" data-category="fullstack" aria-labelledby="project-4-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" 
+                alt="Abstract generative visualization representing algorithmic intelligence and human-computer interfaces"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="4" aria-haspopup="dialog" aria-label="Preview details for PromptForge AI Benchmarker">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Full-Stack</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 id="project-4-title" class="project-title">PromptForge Evaluation Suite</h3>
+              <p class="project-summary">
+                Benchmarking system for LLM inference latency, token cost analysis, and reproducible semantic grading across complex prompt workflows.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in PromptForge">
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for PromptForge">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for PromptForge on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 5 -->
+          <article class="project-card interactive-tilt" data-category="systems" aria-labelledby="project-5-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" 
+                alt="Cybernetic code streams and cryptography logic representation on dark display"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="5" aria-haspopup="dialog" aria-label="Preview details for Verity Ledger">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Systems &amp; APIs</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 id="project-5-title" class="project-title">Verity Immutable Audit Ledger</h3>
+              <p class="project-summary">
+                Cryptographically verifiable append-only ledger designed for high-integrity compliance logs, signed hash chains, and zero-loss durability.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in Verity Ledger">
+                <li>Rust</li>
+                <li>WebCrypto API</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for Verity Ledger">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for Verity Ledger on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 6 -->
+          <article class="project-card interactive-tilt" data-category="webapps" aria-labelledby="project-6-title">
+            <div class="project-media">
+              <img 
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+                alt="Clean web interface mockup illustrating e-commerce conversion dashboard"
+                class="project-image"
+                width="600"
+                height="360"
+                loading="lazy"
+                decoding="async"
+              >
+              <div class="project-media-overlay">
+                <button type="button" class="btn btn-sm btn-light open-modal-btn" data-project-id="6" aria-haspopup="dialog" aria-label="Preview details for Minimalist Storefront Engine">
+                  Quick View
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge">Web App</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 id="project-6-title" class="project-title">Kuro Headless Commerce</h3>
+              <p class="project-summary">
+                Sub-second page-load storefront with instant client-side cart transitions, server-side static generation, and accessible multi-step checkout.
+              </p>
+              <ul class="project-tech-list" aria-label="Technologies used in Kuro Commerce">
+                <li>Vanilla JS</li>
+                <li>CSS Flexbox</li>
+                <li>Stripe API</li>
+                <li>Service Workers</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#interactive-hub" class="project-action-link" aria-label="Explore interactive demo for Kuro Commerce">
+                  <span>Live Demo</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-action-link" aria-label="View source code for Kuro Commerce on GitHub">
+                  <span>GitHub</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. INTERACTIVE COMPONENT CONTAINER
+         Specific Landmark Section:
+         - Feature 1: MMV Interactive Developer Terminal (Live CLI Sandbox with Matrix effect)
+         - Feature 2: Performance Audit Simulator
+         - Feature 3: Accessible FAQ Accordion
+         ======================================================================= -->
+    <section id="interactive-hub" class="section interactive-section" aria-labelledby="interactive-heading">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-kicker">04 / Interaction</span>
+          <h2 id="interactive-heading" class="section-title">Interactive Component Container</h2>
+          <p class="section-lead">Test live developer tools, run benchmarks, or interact with the MMV command-line shell directly in your browser.</p>
+        </div>
+
+        <!-- Hooking Interactive Feature: MMV Interactive Developer Terminal -->
+        <div class="interactive-terminal-card interactive-tilt" id="terminal-container" aria-labelledby="terminal-heading">
+          <div class="terminal-header-bar">
+            <div class="terminal-dots-cluster" aria-hidden="true">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-header-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+              <span id="terminal-heading">mmv@developer-shell:~ (CLI v2.6)</span>
+            </div>
+            <div class="terminal-header-tools">
+              <button type="button" class="term-tool-btn" id="matrix-toggle-btn" aria-label="Toggle Matrix Digital Rain Animation">
+                <span>[ Matrix FX ]</span>
+              </button>
+              <button type="button" class="term-tool-btn" id="term-clear-btn" aria-label="Clear Terminal Screen">
+                <span>[ Clear ]</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Canvas for Matrix Rain Effect (Hooking Visual Feature) -->
+          <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+
+          <!-- Terminal Content & Command History -->
+          <div class="terminal-content" id="terminal-screen" role="log" aria-live="polite">
+            <div class="term-welcome-msg">
+              <span class="term-text-highlight">Welcome to Developer MMV Interactive Shell [Version 2.6.4]</span>
+              <span class="term-text-dim">Zero frameworks. Pure vanilla web engine. Type <strong>help</strong> or click one of the quick actions below:</span>
+            </div>
+            
+            <!-- Quick Command Shortcut Chips -->
+            <div class="term-quick-chips" role="group" aria-label="Terminal command shortcuts">
+              <button type="button" class="term-chip" data-cmd="help">help</button>
+              <button type="button" class="term-chip" data-cmd="skills">skills</button>
+              <button type="button" class="term-chip" data-cmd="projects">projects</button>
+              <button type="button" class="term-chip" data-cmd="matrix">matrix</button>
+              <button type="button" class="term-chip" data-cmd="hire">hire</button>
+              <button type="button" class="term-chip" data-cmd="ping">ping</button>
+              <button type="button" class="term-chip" data-cmd="theme">theme</button>
+            </div>
+
+            <div id="terminal-history" class="terminal-history"></div>
+
+            <!-- Terminal Interactive Input Line -->
+            <form id="terminal-form" class="terminal-input-row" autocomplete="off">
+              <label for="terminal-input" class="term-prompt">
+                <span class="prompt-user">guest</span><span class="prompt-at">@</span><span class="prompt-host">mmv-dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+              </label>
+              <input 
+                type="text" 
+                id="terminal-input" 
+                class="terminal-input" 
+                placeholder="type 'help', 'skills', 'hire', or 'matrix'..."
+                spellcheck="false"
+                autocomplete="off"
+                aria-label="Terminal command input"
+              >
+            </form>
+          </div>
+        </div>
+
+        <!-- Component Container Wrapper for Performance Simulator & Accordion -->
+        <div class="interactive-component-container">
+          
+          <!-- Feature 2: Interactive System Health & Performance Sandbox -->
+          <div class="interactive-card interactive-simulator-card interactive-tilt" aria-labelledby="simulator-heading">
+            <div class="card-top-bar">
+              <span class="terminal-dot red" aria-hidden="true"></span>
+              <span class="terminal-dot yellow" aria-hidden="true"></span>
+              <span class="terminal-dot green" aria-hidden="true"></span>
+              <span class="terminal-title">mmv-kernel-benchmark.sh</span>
+            </div>
+            <div class="simulator-body">
+              <div class="simulator-intro">
+                <h3 id="simulator-heading">Interactive Performance Audit Simulator</h3>
+                <p>Simulate instant page-load telemetry, bundle size constraints, and accessibility compliance scores in real time.</p>
+              </div>
+
+              <!-- Interactive Controls -->
+              <div class="simulator-controls" role="group" aria-label="Audit simulation settings">
+                <div class="control-group">
+                  <label for="network-profile" class="control-label">Network Condition:</label>
+                  <select id="network-profile" class="form-select" aria-describedby="network-desc">
+                    <option value="fast3g">Fast 3G (1.6 Mbps / 150ms)</option>
+                    <option value="slow4g" selected>Standard 4G (4.0 Mbps / 40ms)</option>
+                    <option value="broadband">Broadband Fiber (100 Mbps / 5ms)</option>
+                  </select>
+                  <span id="network-desc" class="visually-hidden">Select simulated network latency</span>
+                </div>
+
+                <div class="control-group">
+                  <label for="asset-bundle" class="control-label">Asset Architecture:</label>
+                  <select id="asset-bundle" class="form-select">
+                    <option value="vanilla" selected>Vanilla HTML/CSS/JS (0kb Framework)</option>
+                    <option value="typical">Typical Heavy Bundler (450kb+ JS)</option>
+                  </select>
+                </div>
+
+                <button type="button" id="run-simulation-btn" class="btn btn-primary simulator-run-btn">
+                  <span>Run Audit Simulation</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+              </div>
+
+              <!-- Simulator Live Output Display -->
+              <div class="simulator-output" id="simulation-output" role="region" aria-live="polite" aria-atomic="true">
+                <div class="output-stat">
+                  <span class="stat-name">Est. Time to Interactive:</span>
+                  <span class="stat-value text-accent" id="sim-tti">0.34s</span>
+                </div>
+                <div class="output-stat">
+                  <span class="stat-name">Payload Size:</span>
+                  <span class="stat-value" id="sim-payload">18.4 KB (Gzip)</span>
+                </div>
+                <div class="output-stat">
+                  <span class="stat-name">Lighthouse Score:</span>
+                  <span class="stat-value text-success" id="sim-score">100 / 100</span>
+                </div>
+                <div class="output-stat">
+                  <span class="stat-name">Accessibility:</span>
+                  <span class="stat-value text-success" id="sim-a11y">WCAG AAA Certified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3: Accessible Interactive FAQ Accordion -->
+          <div class="interactive-card accordion-card interactive-tilt" aria-labelledby="accordion-section-heading">
+            <h3 id="accordion-section-heading" class="interactive-card-title">Frequently Asked Questions &amp; Work Process</h3>
+            <p class="interactive-card-desc">Click any question below to toggle the expandable answer panel.</p>
+
+            <div class="accordion-container" id="faq-accordion" role="region" aria-label="Frequently Asked Questions Accordion">
+
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button 
+                    type="button" 
+                    class="accordion-trigger" 
+                    id="faq-btn-1" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-1"
+                  >
+                    <span class="accordion-question">Why prioritize plain vanilla HTML, CSS, and JS over modern frameworks?</span>
+                    <svg class="accordion-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </h4>
+                <div 
+                  id="faq-panel-1" 
+                  class="accordion-panel" 
+                  role="region" 
+                  aria-labelledby="faq-btn-1" 
+                  hidden
+                >
+                  <div class="accordion-content">
+                    <p>
+                      Modern browser engines are exceptionally capable. Vanilla code ensures zero bundle bloat, zero dependency maintenance vulnerabilities, instant execution, and long-term durability. It ensures web projects remain functional decades from now without framework churn or broken build toolchains.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button 
+                    type="button" 
+                    class="accordion-trigger" 
+                    id="faq-btn-2" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-2"
+                  >
+                    <span class="accordion-question">What is your typical engagement model for freelance or contract projects?</span>
+                    <svg class="accordion-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </h4>
+                <div 
+                  id="faq-panel-2" 
+                  class="accordion-panel" 
+                  role="region" 
+                  aria-labelledby="faq-btn-2" 
+                  hidden
+                >
+                  <div class="accordion-content">
+                    <p>
+                      I partner with teams on either a milestone-based project scope or dedicated sprint retainers. Every engagement starts with a thorough architecture discovery, followed by transparent milestones, automated CI verification, and comprehensive handoff documentation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button 
+                    type="button" 
+                    class="accordion-trigger" 
+                    id="faq-btn-3" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-3"
+                  >
+                    <span class="accordion-question">How do you ensure accessibility (a11y) across all screen sizes?</span>
+                    <svg class="accordion-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </h4>
+                <div 
+                  id="faq-panel-3" 
+                  class="accordion-panel" 
+                  role="region" 
+                  aria-labelledby="faq-btn-3" 
+                  hidden
+                >
+                  <div class="accordion-content">
+                    <p>
+                      Every component is constructed semantic-first with valid landmark roles, proper keyboard navigation focus management, ARIA expanded/controls mappings, high contrast ratios meeting WCAG 2.1 AA/AAA criteria, and testing across screen readers (VoiceOver, NVDA).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 4 -->
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button 
+                    type="button" 
+                    class="accordion-trigger" 
+                    id="faq-btn-4" 
+                    aria-expanded="false" 
+                    aria-controls="faq-panel-4"
+                  >
+                    <span class="accordion-question">Can you collaborate across remote timezones and distributed engineering teams?</span>
+                    <svg class="accordion-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </button>
+                </h4>
+                <div 
+                  id="faq-panel-4" 
+                  class="accordion-panel" 
+                  role="region" 
+                  aria-labelledby="faq-btn-4" 
+                  hidden
+                >
+                  <div class="accordion-content">
+                    <p>
+                      Yes. I work asynchronously with clear PR documentation, detailed commit histories, and flexible overlapping hours for team syncs across Americas, Europe, and Asia-Pacific timezones.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. CONTACT / CTA SECTION
+         Landmark Section: Direct cards, working static contact form UI
+         ======================================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-kicker">05 / Connection</span>
+          <h2 id="contact-heading" class="section-title">Initiate a Conversation</h2>
+          <p class="section-lead">Have an upcoming engineering challenge or looking to elevate your digital product? Let's connect.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Information Cards -->
+          <div class="contact-info-column">
+            <h3 class="contact-info-title">Contact Channels</h3>
+            <p class="contact-info-desc">
+              Whether you need full-cycle software architecture, technical advisory, or a high-performance frontend implementation, my inbox is open.
+            </p>
+
+            <div class="contact-cards-list" role="list">
+              <!-- Contact Card: Email -->
+              <div class="contact-card interactive-tilt" role="listitem">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Electronic Mail</span>
+                  <a href="mailto:developer.mmv@example.com" class="contact-value" aria-label="Send email to developer.mmv@example.com">developer.mmv@example.com</a>
+                </div>
+              </div>
+
+              <!-- Contact Card: Location & Timezone -->
+              <div class="contact-card interactive-tilt" role="listitem">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Headquarters / Location</span>
+                  <span class="contact-value">Global Remote &bull; UTC &plusmn;8 / Flexible Sync</span>
+                </div>
+              </div>
+
+              <!-- Contact Card: Response Time -->
+              <div class="contact-card interactive-tilt" role="listitem">
+                <div class="contact-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-label">Standard Response Time</span>
+                  <span class="contact-value">&lt; 24 Business Hours</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Quick List -->
+            <div class="contact-socials-box">
+              <span class="socials-box-title">Verified Profiles:</span>
+              <div class="socials-links-group">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="Visit Developer MMV's GitHub Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="Visit Developer MMV's LinkedIn Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="Visit Developer MMV's X Twitter Profile">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                  <span>Twitter / X</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Working Static Contact Form UI -->
+          <div class="contact-form-column">
+            <form id="contact-form" class="contact-form-card interactive-tilt" novalidate aria-labelledby="form-card-title">
+              <h3 id="form-card-title" class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill in the fields below. A confirmation will display upon submission.</p>
+
+              <!-- Name Input -->
+              <div class="form-field">
+                <label for="contact-name" class="field-label">
+                  Full Name <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="field-input" 
+                  placeholder="e.g. Jane Doe"
+                  required 
+                  aria-required="true"
+                  autocomplete="name"
+                >
+                <span class="field-error-msg" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-field">
+                <label for="contact-email" class="field-label">
+                  Email Address <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="field-input" 
+                  placeholder="e.g. jane@company.com"
+                  required 
+                  aria-required="true"
+                  autocomplete="email"
+                >
+                <span class="field-error-msg" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Subject / Project Scope -->
+              <div class="form-field">
+                <label for="contact-subject" class="field-label">
+                  Subject / Scope <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <select id="contact-subject" name="subject" class="field-select" required aria-required="true">
+                  <option value="" disabled selected>Select an engagement topic...</option>
+                  <option value="new-project">New Web Application Development</option>
+                  <option value="architecture">System Architecture / Code Audit</option>
+                  <option value="consulting">Technical Advisory / Consulting</option>
+                  <option value="collaboration">General Collaboration / Speaking</option>
+                </select>
+                <span class="field-error-msg" id="subject-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Message Body -->
+              <div class="form-field">
+                <label for="contact-message" class="field-label">
+                  Message <span class="required-indicator" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="field-textarea" 
+                  rows="5" 
+                  placeholder="Share details about your timeline, technical goals, and requirements..."
+                  required 
+                  aria-required="true"
+                ></textarea>
+                <span class="field-error-msg" id="message-error" aria-live="polite"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-submit-row">
+                <button type="submit" id="contact-submit-btn" class="btn btn-primary submit-btn">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Accessible Live Feedback Banner -->
+              <div id="form-feedback" class="form-feedback-banner" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       INTERACTIVE MODAL WINDOW CONTAINER
+       Accessible Dialog for Project Previews
+       ========================================================================= -->
+  <div id="project-modal" class="modal-dialog-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog-content">
+      <button type="button" id="modal-close-btn" class="modal-close-btn" aria-label="Close project preview dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="Project detail illustration preview" class="modal-image" width="700" height="400">
+        </div>
+        <div class="modal-text-content">
+          <span id="modal-category" class="project-badge">Category</span>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+          <p id="modal-description" class="modal-description">Detailed description will load here dynamically upon triggering the modal.</p>
+          <div class="modal-tags" id="modal-tags" aria-label="Technologies used"></div>
+          <div class="modal-actions">
+            <a href="#contact" class="btn btn-primary modal-action-btn" id="modal-primary-btn">Inquire About This Stack</a>
+            <button type="button" class="btn btn-secondary" id="modal-dismiss-btn">Close Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       6. FOOTER
+       Landmark: <footer role="contentinfo">
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <!-- Footer Brand Info -->
+        <div class="footer-brand-column">
+          <a href="#top" class="footer-brand-logo" aria-label="Developer MMV - Back to top">
+            <svg class="brand-icon" width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <rect width="40" height="40" rx="10" fill="currentColor"/>
+              <path d="M11 28V12L17.5 21L24 12V28H20.5V17.5L17.5 22L14.5 17.5V28H11Z" fill="#e8e8e8"/>
+              <circle cx="28" cy="26" r="2.5" fill="#c0c0c0"/>
+            </svg>
+            <span class="footer-brand-name">Developer MMV</span>
+          </a>
+          <p class="footer-bio">
+            Minimalist full-stack engineer building fast, reliable, and accessible web systems with zero unnecessary dependencies.
+          </p>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="footer-nav-column">
+          <h4 class="footer-column-title">Quick Navigation</h4>
+          <nav aria-label="Footer Quick Links">
+            <ul class="footer-nav-list" role="list">
+              <li><a href="#hero" class="footer-link">Home / Overview</a></li>
+              <li><a href="#tech-stack" class="footer-link">Tech Carousel</a></li>
+              <li><a href="#about" class="footer-link">About &amp; Journey</a></li>
+              <li><a href="#skills" class="footer-link">Technical Skills</a></li>
+              <li><a href="#projects" class="footer-link">Featured Work</a></li>
+              <li><a href="#interactive-hub" class="footer-link">Interactive Hub &amp; CLI</a></li>
+              <li><a href="#contact" class="footer-link">Get in Touch</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Social Connections Column -->
+        <div class="footer-social-column">
+          <h4 class="footer-column-title">Online Channels</h4>
+          <ul class="footer-social-list" role="list">
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Developer MMV on GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Developer MMV on LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Developer MMV on Twitter/X">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                <span>Twitter / X</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:developer.mmv@example.com" class="footer-social-link" aria-label="Send email to Developer MMV">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>developer.mmv@example.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-row">
+        <p class="footer-copyright">
+          &copy; 2026 Developer MMV. Built with semantic HTML5, modern CSS3, and vanilla ES6+. All rights reserved.
+        </p>
+        <a href="#top" class="back-to-top-btn" aria-label="Scroll back to top of the webpage">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Relative JavaScript Link -->
+  <script src="./script.js" defer></script>
+</body>
+</html>
