@@ -76,6 +76,9 @@
 
   /* Max Widths */
   --max-width: 1200px;
+
+  /* Texture */
+  --texture-dot: rgba(47, 46, 54, 0.12);
 }
 
 /* Dark Theme Overrides */
@@ -107,6 +110,8 @@
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.5);
   --shadow-focus: 0 0 0 3px rgba(192, 192, 192, 0.35);
+
+  --texture-dot: rgba(255, 255, 255, 0.055);
 }
 
 /* --------------------------------------------------------------------------
@@ -134,6 +139,19 @@ body {
   transition: background-color var(--transition-normal), color var(--transition-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dot-grid texture overlay — adapts to light & dark */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle, var(--texture-dot) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  transition: background-image var(--transition-normal);
 }
 
 img, svg {
