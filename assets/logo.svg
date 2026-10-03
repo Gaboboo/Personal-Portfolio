@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <rect width="100" height="100" rx="24" fill="#2f2e36"/>
-  <path d="M28 70V30L44 52.5L60 30V70H51.25V43.75L44 55L36.75 43.75V70H28Z" fill="#e8e8e8"/>
-  <circle cx="70" cy="65" r="6" fill="#c0c0c0"/>
+  <!-- Modern Geometric 'G' with 'S' accent -->
+  <path d="M68 36C63 30 54 26 44 26C28 26 18 36 18 50C18 64 28 74 44 74C58 74 67 66 68 54H44V44H78V56C76 72 63 84 44 84C22 84 8 69 8 50C8 31 22 16 44 16C57 16 69 22 76 30L68 36Z" fill="#e8e8e8"/>
+  <circle cx="78" cy="74" r="6" fill="#c0c0c0"/>
 </svg>

@@ -42,3 +42,20 @@ Always generate complete, functional code blocks—avoid placeholders, ellipsis 
 Ensure semantic HTML tags are prioritized (<header>, <nav>, <main>, <section>, <article>, <footer>).
 Keep CSS organized with clear section headers, CSS custom properties (:root), and smooth transitions.
 Keep JavaScript modular, event-driven, and scoped without polluting global namespace.
+
+## Personal Information
+Name: Jose Gabriel M. Saldana
+Pen name: g4bXXVI
+Job: Future DevSecOps
+Style Reference: https://bryllim.com
+
+About: A 4th Year Computer Science Student who is striving~~ //add more
+Projects:
+    - COMSCA-BAGAC: A FinTech web app for Community Managed Savings and Credit Association used next js for full stack, supabase, docker, drizzle, etc.
+    - Aroma Cafe: An ordering system/POS for aroma Cafe developed with java
+    - Meridian Timepieces: an e-commerce website for watch store using html5, css, js, node.js and supabase
+    - Ticktask - a desktop productivity app for tracking and managing tasks  made with c# and avalonia UI 
+    - Pasadali - a Saas for commuter, driver, and cooperative. Used for live pulse tracking of jeepney locations, driver digital locker, and coop management info system
+    - Geo-SHIELD (Satelline Hazard Intelligence and Ecological Landfall Defense) - for monitoring vulnerable areas with less tree canopy, plantation vulnerable because of soil conditions etc.
+
+

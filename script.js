@@ -246,145 +246,145 @@ document.addEventListener('DOMContentLoaded', () => {
       'js': {
         title: 'JavaScript (ES2024+)',
         category: 'Languages / Primary Core',
-        exp: '6+ Years In Production',
-        desc: 'Deep fluency with modern ECMAScript standards, asynchronous Event Loop pipelines, Web Workers, and direct DOM manipulation with zero framework overhead.',
-        usecase: 'Ultra-fast web apps, zero-bloat state engines, reactive DOM interfaces.',
-        project: 'ApexMetrics Cloud Analytics',
+        exp: 'Production Experience',
+        desc: 'Fluent in modern ECMAScript standards, asynchronous Event Loop pipelines, Web Workers, and direct DOM manipulation with zero framework overhead.',
+        usecase: 'Real-time telemetry, interactive web interfaces, client state management.',
+        project: 'Meridian Timepieces',
         href: '#projects'
       },
       'ts': {
         title: 'TypeScript',
         category: 'Languages / Type Systems',
-        exp: '5+ Years In Production',
-        desc: 'Strict type safety, generic utility types, conditional types, and compile-time contract enforcement for scalable, fault-tolerant software architecture.',
-        usecase: 'Large-scale distributed systems, client SDKs, enterprise REST/GraphQL APIs.',
-        project: 'PromptForge Evaluation Suite',
+        exp: 'Production Experience',
+        desc: 'Strict type safety, generic utility types, and compile-time contract enforcement for scalable, fault-tolerant software architecture.',
+        usecase: 'Full-stack applications, API integration layers, type-safe data pipelines.',
+        project: 'Geo-SHIELD & COMSCA-BAGAC',
         href: '#projects'
       },
       'python': {
-        title: 'Python (AsyncIO / FastAPI)',
+        title: 'Python (GIS & Analytics)',
         category: 'Languages & Machine Intelligence',
-        exp: '5+ Years In Production',
-        desc: 'Concurrent asynchronous backend services, data modeling, automated regression testing, and production LLM orchestration architectures.',
-        usecase: 'Machine learning evaluation pipelines, background microservices, analytical data jobs.',
-        project: 'PromptForge Evaluation Suite',
+        exp: 'Academic & Project Verified',
+        desc: 'Spatial data processing, geospatial satellite image analytics, and automated reporting pipelines for terrain hazard assessment.',
+        usecase: 'Hazard intelligence, satellite canopy analysis, ecological defense algorithms.',
+        project: 'Geo-SHIELD',
         href: '#projects'
       },
       'go': {
         title: 'Golang (Go)',
         category: 'Languages / Concurrent Systems',
-        exp: '4+ Years In Production',
+        exp: 'Systems & Microservices',
         desc: 'High-throughput microservices using Goroutines, buffered channels, lightweight HTTP routers, and compiled zero-dependency static binaries.',
-        usecase: 'Distributed task orchestrators, high-concurrency event ingestion brokers.',
-        project: 'Strata Distributed Orchestrator',
+        usecase: 'Distributed task orchestrators, high-concurrency event brokers.',
+        project: 'Pasadali Transit Engine',
         href: '#projects'
       },
       'rust': {
-        title: 'Rust',
+        title: 'Rust & Systems',
         category: 'Languages / Memory-Safe Systems',
-        exp: '3+ Years In Production',
-        desc: 'Zero-cost abstractions, fearless concurrency, memory safety without garbage collection, and high-performance WebAssembly compilation.',
-        usecase: 'Cryptographic hash chain verification, secure append-only ledger systems.',
-        project: 'Verity Immutable Audit Ledger',
+        exp: 'Systems Engineering',
+        desc: 'Zero-cost abstractions, fearless concurrency, memory safety without garbage collection, and robust low-level performance.',
+        usecase: 'Cryptographic hash chains, secure audit logs, memory-critical operations.',
+        project: 'COMSCA-BAGAC Secure Ledger',
         href: '#projects'
       },
       'node': {
         title: 'Node.js Runtime',
         category: 'Frameworks & Runtimes',
-        exp: '6+ Years In Production',
-        desc: 'Server-side JavaScript runtime engineering, event-driven streaming, native clustering, HTTP/2 servers, and low-latency WebSocket backends.',
-        usecase: 'Real-time telemetry pipelines, REST & GraphQL servers, CLI automation.',
-        project: 'ApexMetrics Cloud Analytics',
+        exp: 'Production Experience',
+        desc: 'Server-side JavaScript runtime engineering, event-driven streaming, REST/GraphQL APIs, and real-time WebSocket backends.',
+        usecase: 'Backend APIs, e-commerce servers, real-time data synchronization.',
+        project: 'Meridian Timepieces',
         href: '#projects'
       },
       'html5': {
         title: 'HTML5 & Semantic Web',
         category: 'Frameworks & Standards',
-        exp: '6+ Years In Production',
+        exp: 'Web Standards Mastery',
         desc: 'Strict semantic structuring, WCAG 2.1 AAA accessibility compliance, landmark regions, ARIA state binding, and screen-reader optimizations.',
         usecase: 'Accessible web architecture, SEO optimization, device-agnostic markup.',
-        project: 'Chronicle Notes & Studio',
+        project: 'Meridian Timepieces & Portfolio',
         href: '#projects'
       },
       'css3': {
         title: 'Modern CSS3 (Grid & Flexbox)',
         category: 'Frameworks & Styling',
-        exp: '6+ Years In Production',
+        exp: 'Responsive UI Design',
         desc: 'Custom properties design systems, fluid responsive typography, sub-millisecond hardware-accelerated animations, and responsive media queries.',
         usecase: 'Minimalist fluid layouts, dark/light themes, zero-dependency stylesheets.',
-        project: 'Developer MMV Portfolio',
+        project: 'g4bXXVI Portfolio',
         href: '#about'
       },
       'react': {
-        title: 'React & Web Components',
+        title: 'Next.js & React Ecosystem',
         category: 'Frameworks & UI Architecture',
-        exp: '5+ Years In Production',
-        desc: 'Custom Web Components with Shadow DOM encapsulation, custom HTML elements, and lightweight declarative state synchronization.',
-        usecase: 'Reusable design systems, cross-platform micro-frontends, modular widgets.',
-        project: 'ApexMetrics Cloud Analytics',
+        exp: 'Full-Stack Web Apps',
+        desc: 'Modern Next.js App Router, server-side rendering, React Server Components, server actions, and modular component architecture.',
+        usecase: 'FinTech platforms, cooperative portals, responsive real-time web applications.',
+        project: 'COMSCA-BAGAC & Pasadali',
         href: '#projects'
       },
       'postgres': {
-        title: 'PostgreSQL',
+        title: 'PostgreSQL & Supabase',
         category: 'Data & Cloud Infrastructure',
-        exp: '5+ Years In Production',
-        desc: 'Relational data modeling, ACID transactions, complex indexed queries, JSONB storage, partitioned tables, and write-ahead log replication.',
-        usecase: 'Enterprise data persistence, ledger audit trails, user access stores.',
-        project: 'Verity Immutable Audit Ledger',
+        exp: 'Production Persistence',
+        desc: 'Relational data modeling, ACID transactions, complex indexed queries, Row Level Security (RLS), and real-time change data capture.',
+        usecase: 'FinTech ledgers, member authentication, real-time cooperative data stores.',
+        project: 'COMSCA-BAGAC & Pasadali',
         href: '#projects'
       },
       'redis': {
         title: 'Redis In-Memory Store',
         category: 'Data & Cloud Infrastructure',
-        exp: '5+ Years In Production',
-        desc: 'Ultra-low latency key-value caching, Pub/Sub event distribution, atomic counters, and distributed mutex locks for high-throughput concurrency.',
-        usecase: 'Task queuing, real-time rate limiting, session persistence, fast caching.',
-        project: 'Strata Distributed Orchestrator',
+        exp: 'Caching & State',
+        desc: 'Ultra-low latency key-value caching, Pub/Sub event distribution, atomic counters, and session persistence for real-time tracking.',
+        usecase: 'Live GPS pulse caching, real-time rate limiting, fleet telemetry.',
+        project: 'Pasadali Transit SaaS',
         href: '#projects'
       },
       'docker': {
         title: 'Docker & Containerization',
-        category: 'Data & Cloud Infrastructure',
-        exp: '5+ Years In Production',
-        desc: 'Multi-stage lean Docker container builds, reproducible runtime sandboxes, minimal Alpine images, and container orchestration.',
-        usecase: 'Hermetic development environments, CI/CD automated deployments.',
-        project: 'Strata Distributed Orchestrator',
+        category: 'DevSecOps & Cloud',
+        exp: 'Container Architecture',
+        desc: 'Multi-stage lean Docker container builds, reproducible runtime sandboxes, minimal Alpine images, and container isolation for DevSecOps.',
+        usecase: 'Hermetic development environments, CI/CD automated deployments, isolated services.',
+        project: 'COMSCA-BAGAC & Geo-SHIELD',
         href: '#projects'
       },
       'graphql': {
-        title: 'GraphQL & Federated APIs',
+        title: 'REST & Drizzle ORM',
         category: 'Frameworks & APIs',
-        exp: '4+ Years In Production',
-        desc: 'Schema-first API design, query resolution optimization, DataLoader batching to solve N+1 bottlenecks, and strongly typed clients.',
-        usecase: 'Data aggregation gateways, mobile/web client data fetching.',
-        project: 'Nexus Cloud Infrastructure',
-        href: '#skills'
+        exp: 'Type-Safe Data Layers',
+        desc: 'TypeScript-first ORM schemas, zero-overhead SQL queries, automated database migrations, and strongly-typed API endpoints.',
+        usecase: 'FinTech database layers, automated schema migrations, type-safe persistence.',
+        project: 'COMSCA-BAGAC',
+        href: '#projects'
       },
       'git': {
         title: 'Git & GitHub Actions CI/CD',
-        category: 'Data & Cloud Infrastructure',
-        exp: '6+ Years In Production',
-        desc: 'Automated continuous integration pipelines, trunk-based deployment, automated linting, security audits, and automated static page generation.',
-        usecase: 'Continuous delivery, automated regression test runs, static hosting.',
-        project: 'Developer MMV Open Source',
+        category: 'DevSecOps & Automation',
+        exp: 'Continuous Integration',
+        desc: 'Automated CI/CD security pipelines, automated testing, static code analysis (SAST), container vulnerability scanning, and branch governance.',
+        usecase: 'DevSecOps automated delivery, regression test runs, static hosting.',
+        project: 'Jose Gabriel M. Saldana Repos',
         href: '#projects'
       },
       'linux': {
         title: 'Linux Systems & POSIX Shell',
-        category: 'Data & Cloud Infrastructure',
-        exp: '6+ Years In Production',
+        category: 'Systems & Infrastructure',
+        exp: 'Infrastructure & Administration',
         desc: 'POSIX shell scripting, kernel tuning, process monitoring, systemd services, SSH key governance, and cloud server provisioning.',
         usecase: 'Automated server orchestration, pipeline scripting, remote operations.',
-        project: 'ApexMetrics Telemetry Nodes',
+        project: 'Pasadali & Geo-SHIELD Nodes',
         href: '#skills'
       },
       'websockets': {
-        title: 'WebSockets & WebCrypto API',
-        category: 'Frameworks & Security',
-        exp: '5+ Years In Production',
-        desc: 'Bi-directional full-duplex persistent connections, heartbeat pings, sub-protocol negotiation, and native client-side SHA-256 cryptographic hashing.',
-        usecase: 'Real-time telemetry feeds, chat protocols, client-side digital signatures.',
-        project: 'ApexMetrics & Verity Ledger',
+        title: 'WebSockets & Live Telemetry',
+        category: 'Frameworks & Real-Time',
+        exp: 'Real-Time Communication',
+        desc: 'Bi-directional persistent connections, heartbeat pings, real-time GPS pulse broadcasting, and live map coordinates synchronization.',
+        usecase: 'Live fleet GPS pulse, cooperative real-time dispatch, instant alerts.',
+        project: 'Pasadali Transit SaaS',
         href: '#projects'
       }
     };
@@ -645,35 +645,35 @@ document.addEventListener('DOMContentLoaded', () => {
         case 'skills':
           printOutput(`
 <span class="term-text-highlight">CORE TECHNICAL PROFICIENCY MATRIX:</span>
-[ Frontend ] JavaScript ES2024+  [====================] 100%
-[ Frontend ] TypeScript          [==================..] 92%
-[ Backend  ] Node.js / Express   [====================] 98%
-[ Backend  ] Go / Concurrency    [=================...] 88%
-[ Data     ] PostgreSQL & SQL    [==================..] 90%
-[ Data     ] Redis / In-Memory   [==================..] 90%
-[ Cloud    ] Docker & Linux      [=================...] 86%
-[ Quality  ] WCAG 2.1 AAA a11y   [====================] 100%
+[ DevSecOps] Docker & Containerization [==================..] 92%
+[ DevSecOps] CI/CD & GitHub Actions    [==================..] 90%
+[ Backend  ] Next.js & TypeScript      [====================] 95%
+[ Backend  ] Java & C# (.NET)          [=================...] 86%
+[ Data     ] Supabase & PostgreSQL     [==================..] 92%
+[ Data     ] Drizzle ORM & SQLite      [=================...] 88%
+[ Systems  ] Linux Kernel & Bash       [=================...] 88%
+[ Frontend ] HTML5 / CSS3 / Vanilla JS [====================] 98%
           `);
           break;
 
         case 'projects':
           printOutput(`
 <span class="term-text-highlight">FEATURED ENGINEERING PROJECTS:</span>
-1. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'1\\']').click()">ApexMetrics Cloud Analytics</a> - Real-time WebSocket telemetry dashboard
-2. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'2\\']').click()">Strata Distributed Orchestrator</a> - Go/Redis background worker engine
-3. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'3\\']').click()">Chronicle Notes &amp; Studio</a> - Offline-first IndexedDB knowledge base
-4. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'4\\']').click()">PromptForge Evaluation Suite</a> - LLM benchmarking & latency grading
-5. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'5\\']').click()">Verity Immutable Audit Ledger</a> - WebCrypto SHA-256 cryptographic chain
-6. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'6\\']').click()">Kuro Headless Commerce</a> - Sub-second conversion storefront
+1. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'1\\']').click()">COMSCA-BAGAC</a> - FinTech web app with Next.js, Supabase & Drizzle
+2. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'2\\']').click()">Pasadali</a> - Smart transit SaaS with live jeepney GPS pulse & coop MIS
+3. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'3\\']').click()">Geo-SHIELD</a> - Satellite hazard intelligence & landslide vulnerability defense
+4. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'4\\']').click()">Ticktask</a> - Cross-platform task management desktop app in C# & Avalonia UI
+5. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'5\\']').click()">Meridian Timepieces</a> - Luxury watch e-commerce storefront with Supabase
+6. <a class="term-action-link" onclick="document.querySelector('[data-project-id=\\'6\\']').click()">Aroma Cafe</a> - Java-based POS ordering & inventory management system
 <em>Click any project above to launch its full modal window!</em>
           `);
           break;
 
         case 'hire':
           printOutput(`
-<span class="term-success">\u2714 AVAILABLE FOR WORK:</span>
-Developer MMV is accepting contract architecture and full-stack engagements.
-Direct Email: <a href="mailto:developer.mmv@example.com" class="term-info">developer.mmv@example.com</a>
+<span class="term-success">\u2714 OPEN FOR COLLABORATION &amp; ROLES:</span>
+Jose Gabriel M. Saldana is open for DevSecOps &amp; Software Engineering opportunities.
+Direct Email: <a href="mailto:g4bxxvi@gmail.com" class="term-info">g4bxxvi@gmail.com</a>
 SLA Response: &lt; 24 business hours.
 <a href="#contact" class="term-action-link">&rarr; Jump to Contact Form Section</a>
           `);
@@ -691,9 +691,9 @@ SLA Response: &lt; 24 business hours.
         case 'ping':
           const latency = (Math.random() * 0.4 + 0.1).toFixed(2);
           printOutput(`
-64 bytes from cloud.mmv.dev (192.0.2.1): icmp_seq=1 ttl=64 time=${latency} ms
-64 bytes from cloud.mmv.dev (192.0.2.1): icmp_seq=2 ttl=64 time=${(parseFloat(latency) + 0.04).toFixed(2)} ms
-<span class="term-success">--- cloud.mmv.dev ping statistics ---</span>
+64 bytes from core.g4bxxvi.dev (192.0.2.1): icmp_seq=1 ttl=64 time=${latency} ms
+64 bytes from core.g4bxxvi.dev (192.0.2.1): icmp_seq=2 ttl=64 time=${(parseFloat(latency) + 0.04).toFixed(2)} ms
+<span class="term-success">--- core.g4bxxvi.dev ping statistics ---</span>
 2 packets transmitted, 2 received, 0% packet loss, time ${latency}ms
           `);
           break;
@@ -705,16 +705,17 @@ SLA Response: &lt; 24 business hours.
         case 'cat bio.md':
         case 'bio':
           printOutput(`
-<span class="term-text-highlight"># Developer MMV — Digital Systems Architect</span>
-"I build software that respects client memory and user attention.
-Zero unnecessary frameworks. 100% adherence to modern web standards."
-Location: Global Remote / San Francisco timezone overlap.
-Years of Craft: 6+
+<span class="term-text-highlight"># Jose Gabriel M. Saldana (g4bXXVI)</span>
+"4th Year Computer Science Student striving to become a DevSecOps Engineer.
+Building hardened cloud infrastructure, resilient software, and zero-bloat web systems."
+Focus: DevSecOps, Cloud Infrastructure, Full-Stack Architecture.
+Projects: COMSCA-BAGAC, Pasadali, Geo-SHIELD, Ticktask, Meridian Timepieces, Aroma Cafe.
+GitHub: https://github.com/Gaboboo
           `);
           break;
 
         case 'sudo':
-          printOutput(`<span class="term-error">Permission denied: Developer MMV is the primary superuser here! But feel free to hire them ;)</span>`);
+          printOutput(`<span class="term-error">Permission denied: Jose Gabriel M. Saldana (g4bXXVI) is the primary superuser here! But feel free to connect ;)</span>`);
           break;
 
         case 'coffee':
@@ -898,46 +899,46 @@ Years of Craft: 6+
 
     const projectDetails = {
       '1': {
-        title: 'ApexMetrics Cloud Analytics',
-        category: 'Full-Stack',
+        title: 'COMSCA-BAGAC FinTech Web App',
+        category: 'Full-Stack FinTech',
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-        description: 'Engineered a real-time telemetry streaming dashboard processing thousands of metrics per second. Leveraged native WebSocket protocols and SVG rendering to deliver 60 FPS charts without heavy third-party graphics runtimes.',
-        tags: ['JavaScript ES6+', 'WebSockets', 'Node.js', 'PostgreSQL', 'SVG Visualizations']
+        description: 'A comprehensive FinTech platform for the Community Managed Savings and Credit Association. Designed with Next.js full-stack architecture, Supabase database persistence, Docker containerization, and Drizzle ORM for type-safe schema migrations. Handles cooperative loan amortizations, member deposits, and automated dividend distribution.',
+        tags: ['Next.js', 'Supabase', 'Docker', 'Drizzle ORM', 'TypeScript', 'FinTech']
       },
       '2': {
-        title: 'Strata Distributed Task Orchestrator',
-        category: 'Systems & APIs',
+        title: 'Pasadali Transit SaaS Platform',
+        category: 'Transit SaaS & IoT',
         image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-        description: 'Architected a distributed background job runner with automated worker heartbeat verification, dead-letter queues, and zero external runtime dependencies. Capable of processing 100,000+ tasks per minute.',
-        tags: ['Go', 'Redis', 'Docker', 'REST API', 'Concurrency']
+        description: 'A dedicated multi-stakeholder SaaS platform serving commuters, jeepney drivers, and transport cooperatives. Features real-time GPS pulse geolocation streaming for live vehicle tracking, a secure digital document locker for driver certifications, and an automated cooperative management information system (MIS).',
+        tags: ['Next.js', 'Supabase', 'WebSockets', 'Geolocation API', 'Docker', 'SaaS']
       },
       '3': {
-        title: 'Chronicle Notes & Studio',
-        category: 'Web App',
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
-        description: 'A distraction-free, offline-first personal knowledge base built using native IndexedDB storage, Web Workers for client-side search indexing, and modern CSS Grid layouts for multi-pane split viewing.',
-        tags: ['HTML5', 'CSS Grid', 'IndexedDB', 'Web Workers', 'Offline-First']
+        title: 'Geo-SHIELD Satellite Hazard Intelligence',
+        category: 'Ecological Defense & GIS',
+        image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
+        description: 'Satellite Hazard Intelligence and Ecological Landfall Defense (Geo-SHIELD) system. Analyzes high-resolution satellite imagery to detect degraded tree canopy cover, vulnerable plantations, and unstable soil moisture conditions prone to devastating landslides and ecological hazards.',
+        tags: ['Python', 'GIS Satellite APIs', 'Docker', 'TypeScript', 'Data Modeling']
       },
       '4': {
-        title: 'PromptForge Evaluation Suite',
-        category: 'Full-Stack',
-        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
-        description: 'An AI developer tool providing programmatic prompt variation comparisons, latency telemetry, token pricing estimations, and automated semantic regression testing.',
-        tags: ['TypeScript', 'Python', 'FastAPI', 'SQLite', 'LLM Benchmarking']
+        title: 'Ticktask Desktop Productivity Suite',
+        category: 'Desktop Application',
+        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
+        description: 'A distraction-free cross-platform desktop productivity and task management suite crafted with C# and Avalonia UI. Features priority kanban boards, local SQLite data persistence, customizable workflow tags, and sub-millisecond keyboard navigation shortcuts across Windows, macOS, and Linux.',
+        tags: ['C#', 'Avalonia UI', '.NET Core', 'SQLite', 'Desktop GUI']
       },
       '5': {
-        title: 'Verity Immutable Audit Ledger',
-        category: 'Systems & APIs',
-        image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
-        description: 'A cryptographic append-only event log utilizing WebCrypto SHA-256 hash chains for verifying the provenance and immutability of system audits and compliance records.',
-        tags: ['Rust', 'WebCrypto API', 'PostgreSQL', 'Docker', 'Security']
+        title: 'Meridian Timepieces E-Commerce',
+        category: 'Web Application',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        description: 'An elegant, high-conversion e-commerce storefront for luxury horology enthusiasts and watch collectors. Built with vanilla HTML5/CSS3/JavaScript, Node.js backend integration, and Supabase database authentication and order tracking, ensuring sub-second page transitions.',
+        tags: ['HTML5', 'CSS3', 'JavaScript ES6+', 'Node.js', 'Supabase', 'E-Commerce']
       },
       '6': {
-        title: 'Kuro Headless Commerce',
-        category: 'Web App',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-        description: 'High-speed headless e-commerce storefront delivering sub-second page transitions, full keyboard checkout navigability, and client-side cart persistence via CacheStorage API.',
-        tags: ['Vanilla JS', 'CSS Flexbox', 'Stripe API', 'Service Workers', 'WCAG AAA']
+        title: 'Aroma Cafe Point-of-Sale & Ordering System',
+        category: 'Systems & Desktop POS',
+        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
+        description: 'A full-featured Point-of-Sale (POS) and inventory ordering system developed in Java for Aroma Cafe. Provides real-time stock alert thresholds, automated thermal receipt generation, kitchen order queuing, and automated daily sales reconciliation reports.',
+        tags: ['Java', 'Swing / JavaFX', 'JDBC', 'SQL', 'Inventory POS']
       }
     };
 
