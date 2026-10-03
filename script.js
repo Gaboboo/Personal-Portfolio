@@ -901,42 +901,42 @@ GitHub: https://github.com/Gaboboo
       '1': {
         title: 'COMSCA-BAGAC FinTech Web App',
         category: 'Full-Stack FinTech',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/comsca.jpg',
         description: 'A comprehensive FinTech platform for the Community Managed Savings and Credit Association. Designed with Next.js full-stack architecture, Supabase database persistence, Docker containerization, and Drizzle ORM for type-safe schema migrations. Handles cooperative loan amortizations, member deposits, and automated dividend distribution.',
         tags: ['Next.js', 'Supabase', 'Docker', 'Drizzle ORM', 'TypeScript', 'FinTech']
       },
       '2': {
         title: 'Pasadali Transit SaaS Platform',
         category: 'Transit SaaS & IoT',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/pasadali.webp',
         description: 'A dedicated multi-stakeholder SaaS platform serving commuters, jeepney drivers, and transport cooperatives. Features real-time GPS pulse geolocation streaming for live vehicle tracking, a secure digital document locker for driver certifications, and an automated cooperative management information system (MIS).',
         tags: ['Next.js', 'Supabase', 'WebSockets', 'Geolocation API', 'Docker', 'SaaS']
       },
       '3': {
         title: 'Geo-SHIELD Satellite Hazard Intelligence',
         category: 'Ecological Defense & GIS',
-        image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/earth.jpg',
         description: 'Satellite Hazard Intelligence and Ecological Landfall Defense (Geo-SHIELD) system. Analyzes high-resolution satellite imagery to detect degraded tree canopy cover, vulnerable plantations, and unstable soil moisture conditions prone to devastating landslides and ecological hazards.',
         tags: ['Python', 'GIS Satellite APIs', 'Docker', 'TypeScript', 'Data Modeling']
       },
       '4': {
         title: 'Ticktask Desktop Productivity Suite',
         category: 'Desktop Application',
-        image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/productivity.jpeg',
         description: 'A distraction-free cross-platform desktop productivity and task management suite crafted with C# and Avalonia UI. Features priority kanban boards, local SQLite data persistence, customizable workflow tags, and sub-millisecond keyboard navigation shortcuts across Windows, macOS, and Linux.',
         tags: ['C#', 'Avalonia UI', '.NET Core', 'SQLite', 'Desktop GUI']
       },
       '5': {
         title: 'Meridian Timepieces E-Commerce',
         category: 'Web Application',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/meridian.jpeg',
         description: 'An elegant, high-conversion e-commerce storefront for luxury horology enthusiasts and watch collectors. Built with vanilla HTML5/CSS3/JavaScript, Node.js backend integration, and Supabase database authentication and order tracking, ensuring sub-second page transitions.',
         tags: ['HTML5', 'CSS3', 'JavaScript ES6+', 'Node.js', 'Supabase', 'E-Commerce']
       },
       '6': {
         title: 'Aroma Cafe Point-of-Sale & Ordering System',
         category: 'Systems & Desktop POS',
-        image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
+        image: '/home/gab-saldana/Personal-Portfolio/assets/aroma.jpg',
         description: 'A full-featured Point-of-Sale (POS) and inventory ordering system developed in Java for Aroma Cafe. Provides real-time stock alert thresholds, automated thermal receipt generation, kitchen order queuing, and automated daily sales reconciliation reports.',
         tags: ['Java', 'Swing / JavaFX', 'JDBC', 'SQL', 'Inventory POS']
       }
